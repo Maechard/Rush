@@ -20,7 +20,7 @@ int		main(void)
 	t_list_l	*lt_l;
 	t_list		*lt_c;
 
-	while (read(0, str, 1))
+	while (read(0, str, 1) < 0)
 	{
 		if (c != str[0] && str[0] != '\n')
 		{
